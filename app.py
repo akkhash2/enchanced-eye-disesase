@@ -60,7 +60,7 @@ class EyeDiseaseClassifier(nn.Module):
         return self.classifier(self.backbone(x))
 
 
-# Load model (cached per disease)
+# Load model (cached per disease)##
 @st.cache_resource
 def load_model(disease: str):
     cfg        = DISEASE_CONFIG[disease]
